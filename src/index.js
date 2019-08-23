@@ -3,10 +3,10 @@ import cors from 'cors';
 import express from 'express';
 import request from 'request';
 import mongoose from 'mongoose';
-import problem from  '../models/problem'
-import problemDetail from '../models/problem_detail'
-import User from '../models/user'
-import Admin from '../models/admin'
+import problem from  './models/problem'
+import problemDetail from './models/problem_detail'
+import User from './models/user'
+import Admin from './models/admin'
 const app = express();
 var mongoDB = process.env.MONGO_SERVER
 const _app_folder="./angular/strive-client"
