@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ -d dist/",
+    "build": "npm run clean && babel src/ -d dist/",
     "start": "npm run build && node dist/index.js",
+    "clean": "rm -rf dist && mkdir dist",
     "dev": "nodemon --exec babel-node src/index.js",
     "test": "echo \"No test specified\" && exit 0"
   },
